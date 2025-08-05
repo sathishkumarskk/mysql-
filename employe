@@ -1,0 +1,45 @@
+create table employe_detail(
+id int,
+name varchar(50),
+gender varchar(50),
+join_date varchar(50),
+address varchar(100),
+phone_number varchar(20)
+); 
+create table employe_role(
+id int,
+roll varchar(50),
+year_of_experience varchar(50)
+);
+create table employe_salary(
+roll varchar(50),
+year_of_experience varchar(50),
+salary varchar(25)
+);
+insert into employe_detail(id,name,gender,join_date,address,phone_number) values
+(1,'sathish','male','04-05-2022','perumal kovil street,tharamani chennai ,pincode:600113',7200957118),
+(2,'gopal','male','03-09-2023','karumari ammam street,velachery chennai ,pincode:600112',7358423118),
+(3,'kumara saamy','male','04-05-2020','palkaram street,baby nagar chennai ,pincode:600113',6358464118),
+(4,'ramya','femail','04-05-2022',' dum dum street,saiya kolkatha pincode:700113',7358422318),
+(5,'yogesh','male','04-05-2021','sathyam street kuruku santhu,andhra ,pincode:900113',9386423118),
+(6,'varsha','femail','04-05-2019','mosque street,vijaya nagar chennai ,pincode: 600113',7313583118),
+(7,'jayashri','femail','04-05-2016','kopalanagar street,kerala ,pincode: 600113',91588893118);
+select * from employe_detail;
+insert into employe_role(id,roll,year_of_experience) values
+(1,'ai and ml engineer','10 years'),
+(2,'software developer','2 years'),
+(3,'programer trainy','8 years'),
+(4,'programer','3 years'),
+(5,'hr','6 month'),
+(6,'data scientist','1 years'),
+(7,'technical expert','4 years');
+select * from employe_role;
+insert into employe_salary(roll,year_of_experience,salary) values
+('ai and ml engineer','10 years','1,00000 rs'),
+('software developer','2 years','20,000 rs'),
+('programer trainy','8 years','75,000 rs'),
+('programer','3 years','10,000 rs'),
+('hr','6 month','20,000 rs'),
+('data scientist','1 years','35,000 rs'),
+('technical expert','4 years','40,000 rs');
+select * from employe_salary;
